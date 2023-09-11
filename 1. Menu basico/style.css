@@ -1,0 +1,48 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+
+}
+a{
+  color: white;  
+  text-decoration: none;
+}
+header{
+    min-height: 70px;
+    display: flex;
+    background-color:#242628 ;
+    justify-content: space-between;/*space between separa por bloques en header hay 2*/
+    align-items: center;
+    padding: 10px;
+    /*diferencia paddin y marin
+    con paddin: los elemntos se van hacia adentro, aplica un espacio que se llama relleno
+     y lo manda hacia a dentro
+    margin da un espacio al elemento general, lo separac de las esquinas al emento general. 
+    En este ejemplo queremos un padding. */
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+    
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;/*relleno*/
+}
+nav a:hover{
+    color: #F0DB4F;
+}
+/*@media*/
+@media(max-width:680px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
