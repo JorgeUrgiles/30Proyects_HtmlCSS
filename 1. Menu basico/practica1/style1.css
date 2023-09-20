@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    background-color:#242628 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    min-height: 70px;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+
+}
+.logo img{
+height: 70px;
+padding: 8px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: #F0DB4F;
+}
+/*Media*/
+@media(max-width:680px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
