@@ -1,14 +1,41 @@
-.box{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background: red;
-    color: white;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: black;
 }
-#dos{
-    position: relative;
-    top:40px;
-    left: 40px;
-    background: green;
+.container{
+    background: #202020;
+    display: flex;
+    flex-direction: column;
+
+}
+.uno{
+    background-color: #f13929;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+
+}
+.dos{
+    background-color: #7250ff;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+
+}
+.tres{
+    background-color:blue;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+
+}
+.cuatro{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
 
 }
