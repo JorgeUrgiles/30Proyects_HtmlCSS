@@ -16,6 +16,11 @@ a {
   font-weight: bold;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .header {
   border-bottom: 1px solid #454444;
   min-height: 60px;
@@ -55,4 +60,81 @@ a {
 .header .header-content .header-navigation .link-buttom ion-icon {
   font-size: 1.25rem;
   margin-left: 0.5rem;
+}
+
+main {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+main .responsive-container {
+  max-width: 100vw;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .responsive-container .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+main .responsive-container .grid .grid-column {
+  display: flex;
+  flex-direction: column;
+}
+main .responsive-container .grid .grid-column .product {
+  border-radius: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+  font-weight: 400;
+  transition: 0.15s ease;
+  border: none;
+  box-shadow: -9px -1px 35px -1px rgb(0, 0, 0);
+  margin-top: 2rem;
+}
+main .responsive-container .grid .grid-column .product:hover, main .responsive-container .grid .grid-column .product:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgb(164, 237, 90);
+}
+main .responsive-container .grid .grid-column .product .product-content {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.15s ease;
+  background-color: rgb(54, 45, 53);
+}
+main .responsive-container .grid .grid-column .product .product-content .product-info {
+  display: flexd;
+  flex-direction: column;
+}
+main .responsive-container .grid .grid-column .product .product-content .product-info .product-tittle {
+  font-size: 1.125rem;
+  line-height: 1.25;
+}
+main .responsive-container .grid .grid-column .product .product-content .product-info .product-price {
+  margin-top: 0.25rem;
+}
+main .responsive-container .grid .grid-column .product .product-content .product-action {
+  background-color: rgb(36, 33, 36);
+  color: rgb(252, 250, 250);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+main .responsive-container .grid .grid-column .product .product-content .product-action:hover {
+  background-color: #1c1b1b;
+  background-color: rgb(137, 249, 68);
+}
+
+@media (max-width: 600px) {
+  main .responsive-container .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */
