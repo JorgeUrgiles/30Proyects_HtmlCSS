@@ -2,40 +2,59 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-    background: black;
 }
 .container{
-    background: #202020;
+    width: 100vw;
+    height: 100vh;
+    background-color:black ;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(5,2fr) ;
+    grid-template-rows: repeat(5,2fr); 
+    /* gap:10px; */
+    grid-template-areas: 
+    "a1 a1 a1 a2 a2"
+    "a1 a1 a1 a2 a2"
+    "a3 a3 a3 a2 a2"
+    "a3 a3 a3 a2 a2"
+    "a4 a4 a4 a4 a4"
+    
+    ;
+}
+section{ 
+    /* width: 100px;
+    height: 100px; */
+    font-size: 24px;
     display: flex;
-    flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
 }
-.uno{
-    background-color: #f13929;
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-
+.caja1{
+    background-color: rgb(235,109,12);
+    grid-area: a1;
 }
-.dos{
-    background-color: #7250ff;
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-
+.caja2{
+    background-color: rgb(235, 12, 176);
+    grid-area: a2;
+   
 }
-.tres{
-    background-color:blue;
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-
+.caja3{
+    background-color: rgb(1, 80, 22);
+    grid-area: a3;
 }
-.cuatro{
-    background-color: green;
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-
+.caja4{
+    background-color: rgb(7, 72, 146);
+    grid-area: a4;
+}
+@media(max-width:700px){
+    .container{
+        grid-template-areas: 
+    "a1 a1 a1 a2 a2"
+    "a1 a1 a1 a2 a2"
+    "a3 a3 a3 a2 a2"
+    "a4 a4 a4 a4 a4"
+    "a4 a4 a4 a4 a4"
+    
+    ;
+    }
 }
